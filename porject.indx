@@ -1,0 +1,93 @@
+<!DOCTYPE indx>
+<html>
+
+        <head>
+          <title>porject</title>
+          <link href="css/mystyle.css" rel="stylesheet">
+          <link href="css/all.css" rel="stylesheet">
+        </head>
+        <body>
+            <!-- start header -->
+          <header class="header" id="header">
+          <!-- start nav -->  
+            <nav class="navbar">
+              
+               <div class="logo">Abdalh Abdelaziz</div>
+
+               <div class="nav">
+                 <ul>
+                  <li> <a href="#about">about us</a> </li>
+                  <li> <a href="#project">project</a> </li>
+                  <li> <a href="#contact">contact</a> </li>
+                 </ul>
+               </div>
+            </nav>
+            <!-- en nav -->
+            <!-- start about -->
+            <div class="about">
+                <div class="avatar">
+                  <img src="img/avatar/zezo.jpg" alt="zezo">
+                </div>   
+                <div class="aboutme">
+                   <h1>
+                    Hi<br> My Name Is Abdalh Abdelaziz
+                   </h1>
+                   <h2>I Am A Web Developer</h2>
+                   <a href="https://facebook.com"> <i class="fa-brands fa-facebook"></i> </a>
+                   <a href="https://linkedin.com" class="linkedin"> <i class="fa-brands fa-linkedin"></i>
+                  </a>
+
+                </div>
+            </div>    
+            <!-- end about  -->
+          </header>
+          <!-- en header -->
+          <!-- start project -->
+          <section class="projects" id="project">
+              <div class="project_text">
+                <h1>projects</h1>
+                <h3>thisis my projects</h3>
+              </div>
+              <div class="content">
+                  <div class="item">
+                      <img src="img/project.jpg" alt="project">
+                      <h2>projects</h2>
+                  </div>
+                  <div class="item">
+                    <img src="img/project.jpg" alt="project">
+                    <h2>projects</h2>
+                  </div>
+                  <div class="item">
+                      <img src="img/project.jpg" alt="project">
+                      <h2>projects</h2>
+                  </div>
+                  <div class="item">
+                    <img src="img/project.jpg" alt="project">
+                    <h2>projects</h2>
+                  </div>
+              </div>
+          </section>
+          <!-- end porject -->
+
+          <!-- start contact -->
+          <section class="contact" id="contact">
+            <h1>Contact Us</h1>
+              <div class="form">
+              <div clss="form">
+                <form>
+                  <input type="text" placeholder="name" name="name">
+                  <input type="text" name="emil" placeholder="email">
+                  <textarea name="message" placeholder="message"></textarea>
+                  <button>send</button>
+                </form>
+              </div>
+               <div class="map">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6913.00714675567!2d31.2475099!3d29.9649547!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1717411557899!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+               </div>
+          </section>  
+          <!-- end contact -->
+          <!-- start footer -->
+          <footer class="footer">Abdalh Zezo</footer>
+          <!-- end footer -->
+    </body>
+</html>
