@@ -22,51 +22,50 @@ body {
 }
 
 .about {
-    width: 60%;
-    height: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .avatar {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .avatar img {
-    width: 80%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .aboutme {
-    width: 55%;
-    text-align: left;
+    flex: 1 1 100%;
+    text-align: center;
 }
 
 .aboutme h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 24px;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .aboutme h2 {
-    font-size: 28px;
+    font-size: 20px;
     color: #dddddd;
+    margin-bottom: 10px;
 }
 
 .aboutme a {
     color: #ffffff;
-    margin-top: 15px;
-    font-size: 30px;
+    margin: 10px 15px;
+    font-size: 24px;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: color 0.3s;
 }
 
 .aboutme a:hover {
@@ -77,33 +76,34 @@ body {
     width: 100%;
     height: 60px;
     background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 24px;
     font-family: "Pacifico", cursive;
     color: #007bff;
 }
 
 .nav ul {
     display: flex;
+    gap: 15px;
 }
 
 .nav ul li {
-    margin: 0 15px;
+    list-style: none;
 }
 
 .nav ul li a {
     text-decoration: none;
     color: #343a40;
     font-family: "Seymour One", sans-serif;
-    font-size: 18px;
-    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
 .nav ul li a:hover {
@@ -111,19 +111,19 @@ body {
 }
 
 .projects {
-    width: 100%;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #f1f1f1;
 }
 
 .project_text {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .project_text h1 {
-    font-size: 48px;
+    font-size: 32px;
     color: #343a40;
+    margin-bottom: 10px;
 }
 
 .project_text h1::first-letter {
@@ -131,15 +131,13 @@ body {
 }
 
 .content {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .item {
-    width: 22%;
-    height: 250px;
     overflow: hidden;
     position: relative;
     border-radius: 8px;
@@ -149,7 +147,7 @@ body {
 .item img {
     width: 100%;
     height: 100%;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s;
     border-radius: 8px;
 }
 
@@ -160,23 +158,25 @@ body {
 .item h2 {
     position: absolute;
     top: 50%;
-    left: 20px;
-    font-size: 36px;
+    left: 10px;
+    font-size: 18px;
     color: #ffffff;
-    transition: top 0.3s ease-in-out;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .item:hover h2 {
-    top: 40%;
+    opacity: 1;
 }
 
 .contact {
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #ffffff;
 }
 
 .contact h1 {
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
     color: #343a40;
     margin-bottom: 30px;
@@ -188,52 +188,38 @@ body {
 
 .form {
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 input,
 textarea {
-    padding: 15px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    transition: border 0.3s ease;
-}
-
-input:focus,
-textarea:focus {
-    border-color: #007bff;
-    outline: none;
 }
 
 button {
-    padding: 15px 20px;
+    width: 100%;
+    padding: 10px;
     border: none;
     background-color: #007bff;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-.map {
-    margin-top: 30px;
-    width: 100%;
-    height: 400px;
-}
-
 footer {
-    width: 100%;
-    padding: 20px 0;
+    padding: 10px 20px;
     background-color: #343a40;
     color: white;
     text-align: center;
@@ -248,46 +234,33 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        align-items: center;
+    .avatar img {
+        width: 120px;
+        height: 120px;
     }
 
     .aboutme h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .aboutme h2 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .projects,
-    .contact {
-        padding: 40px 10px;
+        grid-template-columns: 1fr;
     }
 
     .navbar {
-        flex-direction: column;
-        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav ul li {
-        margin: 15px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 }
